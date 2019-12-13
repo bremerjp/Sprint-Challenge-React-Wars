@@ -24,6 +24,14 @@ export default function PersonGrid() {
 
   return (
     <div>
+      <Container className="mt-3 d-xs-block d-lg-none">
+        <Button onClick={() => previous()} className="button">
+          Previous
+        </Button>{" "}
+        <Button onClick={() => next()} className="button">
+          Next
+        </Button>{" "}
+      </Container>
       <Container>
         <Row>
           {personArray.map(item => {
