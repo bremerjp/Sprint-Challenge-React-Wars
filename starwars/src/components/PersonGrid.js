@@ -44,13 +44,13 @@ export default function PersonGrid() {
           })}
         </Row>
       </Container>
-      <Container className="mt-3">
+      <Container className="mt-3" className="mb-5">
           <Button onClick={() => previous()} className="button">
             Previous
-          </Button>
+          </Button>{' '}
           <Button onClick={() => next()} className="button">
             Next
-          </Button>
+          </Button>{' '}
       </Container>
     </div>
   );
