@@ -12,7 +12,6 @@ export default function PersonGrid() {
       .get(`https://swapi.co/api/people/?page=${page}`)
       .then(response => {
         const people = response.data.results;
-        console.log(people);
         setPersonArray(people);
       })
       .catch(error => {
@@ -28,9 +27,8 @@ export default function PersonGrid() {
       <Container>
         <Row>
           {personArray.map(item => {
-            console.log(page);
             return (
-              <Col xs="12" sm="4">
+              <Col md="4">
                 <PersonCard
                   key={item.name}
                   born={item.birth_year}
@@ -44,13 +42,13 @@ export default function PersonGrid() {
           })}
         </Row>
       </Container>
-      <Container className="mt-3" className="mb-5">
-          <Button onClick={() => previous()} className="button">
-            Previous
-          </Button>{' '}
-          <Button onClick={() => next()} className="button">
-            Next
-          </Button>{' '}
+      <Container className="mt-3 mb-5">
+        <Button onClick={() => previous()} className="button">
+          Previous
+        </Button>{" "}
+        <Button onClick={() => next()} className="button">
+          Next
+        </Button>{" "}
       </Container>
     </div>
   );

@@ -18,10 +18,7 @@ const PersonCard = props => {
           <CardSubtitle>Born: {born}</CardSubtitle>
           <CardText className="m-0">Height: {height}cm</CardText>
           <CardText>Hair Color: {hairColor}</CardText>
-          <Button
-            onClick={() => window.open(planet)}
-            className="button w-75"
-          >
+          <Button onClick={() => window.open(planet)} className="button w-75">
             View Planet Data
           </Button>
         </CardBody>
