@@ -19,7 +19,6 @@ const PersonCard = props => {
           <CardText className="m-0">Height: {height}cm</CardText>
           <CardText>Hair Color: {hairColor}</CardText>
           <Button
-            // style={{ backgroundColor: "#74686C" }}
             onClick={() => window.open(planet)}
             className="button w-75"
           >
